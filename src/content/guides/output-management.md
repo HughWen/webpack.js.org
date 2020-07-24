@@ -195,7 +195,7 @@ __webpack.config.js__
       print: './src/print.js',
     },
     plugins: [
-+     new CleanWebpackPlugin(),
++     new CleanWebpackPlugin(path, ['dist']),
       new HtmlWebpackPlugin({
         title: '管理输出',
       }),
